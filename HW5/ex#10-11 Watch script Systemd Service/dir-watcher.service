@@ -1,0 +1,13 @@
+Ini, TOML
+
+[Unit]
+Description=Watch ~/watch directory using polling and backup new files
+After=network.target
+
+[Service]
+ExecStart=%h/bin/watch_dir.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
