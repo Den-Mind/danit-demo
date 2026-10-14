@@ -1,0 +1,5 @@
+Port 3333
+PermitRootLogin no
+PasswordAuthentication yes
+PubkeyAuthentication yes
+PidFile /var/run/sshd_3333.pid
